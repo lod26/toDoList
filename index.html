@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href='style.css'>
+    <link rel="stylesheet" href="src/css/modal.css">
+    <script src="src/Task.js"></script>
+    <script src="src/LocStorage.js"></script>
+    <script src="src/TasksList.js"></script>
+    <script src="src/Html.js"></script>
+    <script src="src/modal.js"></script>
+    <title></title>
+</head>
+<body>
+    <div class="app">
+        <div class="header">
+            Мой список дел
+        </div>
+
+        <div class="to-do-list">
+<!--            <div class="task-body">-->
+<!--                <div class="task-text task-item">-->
+<!--                    * Антицелюллитнный массаж-->
+<!--                    * Лифодренажный массаж-->
+<!--                    * Массаж ваккумной банкой-->
+<!--                </div>-->
+<!--                <div class="task-menu task-item">-->
+<!--                    <div class="task-date task-menu-item">-->
+<!--                        СОздан 02.02.2023-->
+<!--                    </div>-->
+<!--                    <div class="task-edit task-menu-item">-->
+<!--                        <a href="">Редактрировать</a>-->
+<!--                    </div>-->
+<!--                    <div class="task-status task-menu-item">-->
+<!--                        <a href="">Завершить</a>-->
+<!--                    </div>-->
+<!--                    <div class="task-delete task-menu-item">-->
+<!--                        <a href="">Удалить</a>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="task-body">-->
+<!--                <div class="task-text task-item">-->
+<!--                    * Антицелюллитнный массаж-->
+<!--                    * Лифодренажный массаж-->
+<!--                    * Массаж ваккумной банкой-->
+<!--                </div>-->
+<!--                <div class="task-info task-item">-->
+<!--                    СОздан 02.02.2023-->
+<!--                </div>-->
+<!--            </div>-->
+<!--&lt;!&ndash;            <div class="task-body">&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="task-text task-item">&ndash;&gt;-->
+<!--&lt;!&ndash;                    * Антицелюллитнный массаж&ndash;&gt;-->
+<!--&lt;!&ndash;                    * Лифодренажный массаж&ndash;&gt;-->
+<!--&lt;!&ndash;                    * Массаж ваккумной банкой&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="task-info task-item">&ndash;&gt;-->
+<!--&lt;!&ndash;                    СОздан 02.02.2023&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="task-body">&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="task-text task-item">&ndash;&gt;-->
+<!--&lt;!&ndash;                    * Антицелюллитнный массаж&ndash;&gt;-->
+<!--&lt;!&ndash;                    * Лифодренажный массаж&ndash;&gt;-->
+<!--&lt;!&ndash;                    * Массаж ваккумной банкой&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="task-info task-item">&ndash;&gt;-->
+<!--&lt;!&ndash;                    СОздан 02.02.2023&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="task-body">&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="task-text task-item">&ndash;&gt;-->
+<!--&lt;!&ndash;                    * Антицелюллитнный массаж&ndash;&gt;-->
+<!--&lt;!&ndash;                    * Лифодренажный массаж&ndash;&gt;-->
+<!--&lt;!&ndash;                    * Массаж ваккумной банкой&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="task-info task-item">&ndash;&gt;-->
+<!--&lt;!&ndash;                    СОздан 02.02.2023&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="task-body">&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="task-text task-item">&ndash;&gt;-->
+<!--&lt;!&ndash;                    * Антицелюллитнный массаж&ndash;&gt;-->
+<!--&lt;!&ndash;                    * Лифодренажный массаж&ndash;&gt;-->
+<!--&lt;!&ndash;                    * Массаж ваккумной банкой&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="task-info task-item">&ndash;&gt;-->
+<!--&lt;!&ndash;                    СОздан 02.02.2023&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="task-body">&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="task-text task-item">&ndash;&gt;-->
+<!--&lt;!&ndash;                    * Антицелюллитнный массаж&ndash;&gt;-->
+<!--&lt;!&ndash;                    * Лифодренажный массаж&ndash;&gt;-->
+<!--&lt;!&ndash;                    * Массаж ваккумной банкой&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="task-info task-item">&ndash;&gt;-->
+<!--&lt;!&ndash;                    СОздан 02.02.2023&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="task-body">&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="task-text task-item">&ndash;&gt;-->
+<!--&lt;!&ndash;                    * Антицелюллитнный массаж&ndash;&gt;-->
+<!--&lt;!&ndash;                    * Лифодренажный массаж&ndash;&gt;-->
+<!--&lt;!&ndash;                    * Массаж ваккумной банкой&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="task-info task-item">&ndash;&gt;-->
+<!--&lt;!&ndash;                    СОздан 02.02.2023&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="task-body">&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="task-text task-item">&ndash;&gt;-->
+<!--&lt;!&ndash;                    * Антицелюллитнный массаж&ndash;&gt;-->
+<!--&lt;!&ndash;                    * Лифодренажный массаж&ndash;&gt;-->
+<!--&lt;!&ndash;                    * Массаж ваккумной банкой&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="task-info task-item">&ndash;&gt;-->
+<!--&lt;!&ndash;                    СОздан 02.02.2023&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="task-body">&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="task-text task-item">&ndash;&gt;-->
+<!--&lt;!&ndash;                    * Антицелюллитнный массаж&ndash;&gt;-->
+<!--&lt;!&ndash;                    * Лифодренажный массаж&ndash;&gt;-->
+<!--&lt;!&ndash;                    * Массаж ваккумной банкой&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="task-info task-item">&ndash;&gt;-->
+<!--&lt;!&ndash;                    СОздан 02.02.2023&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="task-body">&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="task-text task-item">&ndash;&gt;-->
+<!--&lt;!&ndash;                    * Антицелюллитнный массаж&ndash;&gt;-->
+<!--&lt;!&ndash;                    * Лифодренажный массаж&ndash;&gt;-->
+<!--&lt;!&ndash;                    * Массаж ваккумной банкой&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="task-info task-item">&ndash;&gt;-->
+<!--&lt;!&ndash;                    СОздан 02.02.2023&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+
+        </div>
+        <div class="footer">
+            <div class="footer-item">
+                Введите описание задания
+            </div>
+            <div class="footer-item text-input-box">
+                <textarea type="text" class="text-input" maxlength="210" rows="3">
+
+                </textarea>
+            </div>
+            <div class="footer-item btn-box">
+                <button class="create-task">Создать задание</button>
+                <button class="delete-completed">Удалить выполненные</button>
+            </div>
+        </div>
+
+    </div>
+<script src="index.js"></script>
+</body>
+</html>
